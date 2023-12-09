@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>    
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>    
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    <h1>Tic Tac Toe</h1>
+    <span id="winner"></span>
+    <span id="turn"></span>
+
+    <div id="main-menu" class="main-menu">        
+        <form id="gameForm">
+            <div class="form-input">
+                <label for="gridSize" class="form-label">Grid Size (N x N) <span class="small-span">(min: 3, max: 50)</span></label>
+                <input type="number" min="3" max="50" class="form-control" value="3" id="gridSize" placeholder="3">
+            </div>            
+
+            <button type="submit">Start Game!</button>
+        </form>
+    </div>
+
+    <div id="main-game" class="main-game">
+        <div class="board-container">
+            <div id="board" class="board"></div>            
+        </div>        
+        <div class="board-button">
+            <button id="resetButton">Reset</button>
+            <button id="exitButton">Exit</button>            
+        </div>
+    </div>
+
+    <script
+        src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+        crossorigin="anonymous"></script>    
+    <script src="js/index.js"></script>
+</body>
+</html>
